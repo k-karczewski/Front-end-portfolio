@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 75%;
+    margin: 20px auto;
+}
+
+header h1 {
+    color: orange
+}
+
+header h1 span {
+    color: brown;
+}
+
+header input {
+    width: 250px;
+    height: 30px;
+    padding: 5px;
+    border: none;
+    border-bottom:2px solid orangered;
+    outline: none;
+    font-size: 18px;
+    color: brown;
+}
+
+.row {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 75%;
+    /* height: 550px; */
+    margin: 0 auto 25px auto;
+    padding: 10px 0;
+    /* background-color: red; */
+}
+
+
+main section:last-child {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+main .load-button button {
+    display: none;
+    height: 80px;
+    width: 220px;
+    border: 5px solid orange;
+    background-color: orange;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+    outline: none;
+    transition: .3s;
+}
+
+main .load-button button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+main .load-button button.is-active {
+    display: inline-block;
+}
+
+.loader {
+    position: relative;
+    display: none;
+    height: 80px;
+    width: 220px;
+    background-color: white;
+}
+
+.loader.is-active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader .loader-element {
+    width: 30px;
+    height: 30px;
+    background-color: orange;
+    border-radius: 50%;
+    margin: 0 5px;
+    animation: loader .3s linear alternate infinite both;
+    transform: scale(1);
+}
+
+.loader .loader-element:nth-child(2) {
+    background-color:orangered;
+    animation-delay: .10s;
+}
+
+.loader .loader-element:nth-child(3) {
+    animation-delay: .2s;
+}
+
+.card {
+    width: 245px;
+    margin: 0 20px;
+}
+
+.card h4:first-child, h5:nth-child(2) {
+    display: inline-block;
+    width: 50%;
+}
+
+h5:nth-child(2) {
+    text-align: right;
+}
+
+@keyframes loader {
+    0% {
+        transform: scale(.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
