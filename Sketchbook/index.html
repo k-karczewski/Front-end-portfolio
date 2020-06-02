@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sketchbook</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__heading">Sketchbook</h1>
+        <ul class="header__tools">
+            <li class="tool">
+                <label for="pencil-color" class="tool__label">Pencil color:</label>
+                <input type="color" name="pencil-color" id="pencil-color" class="tool__input"/>
+            </li>
+            <li class="tool">
+                <label for="background-color" class="tool__label">Background color:</label>
+                <input type="color" name="background-color" id="background-color" class="tool__input" value="#ffffff"/>
+            </li>
+            <li class="tool">
+                <label for="pencil-size" class="tool__label">Pencil size:</label>
+                <input type="number" name="pencil-size" id="pencil-size" class="tool__input" value="10" step="1"/>
+            </li>
+            <li class="tool">
+               <button class="tool__button" data-button-clear>Clear</button>
+               <button class="tool__button" data-button-save>Save</button>
+            </li>
+        </ul>
+    </header>
+    <main>
+
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script>
+    <script src="./js/sketchbook.js"></script>
+    <script>
+        // const sketchbook = new Sketchbook();
+        // sketchbook.initialize();
+    </script>
+</body>
+</html>
