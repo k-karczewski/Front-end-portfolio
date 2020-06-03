@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+    border: 0;
+}
+
+body {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Aldrich', sans-serif;
+}
+
+.timer__header {
+    padding: 20px;
+    text-align: center;
+    font-size: 88px;
+    height: 15vh;
+}
+
+.timer__clock {
+    display: flex;
+    align-items: center;
+    margin-top: auto;
+}
+
+.clock input{
+    display: block;
+    width: 10vw;
+    height: 10vw;
+    background-color: #000;
+    border: 2px solid #fff;
+    color: #fff;
+    text-align: center;
+    font-size: 86px;
+    font-family: inherit;
+}
+
+.clock input.confirmed {
+    border: none;
+}
+
+.clock label {
+    display: block;
+    margin: 10px 0;
+    font-size: 26px;
+    text-align: center;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+.timer__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 10vh;
+    width: calc(10vw * 3);
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+
+.button {
+    display: block;
+    width:50px;
+    height: 30px;
+    padding: 5px 10px;
+    background-color: #000;
+    margin: 0 10px;
+    cursor: pointer;
+    box-sizing: content-box;
+}
+
+.button svg {
+    height: 100%;
+    width: 100%;
+    fill: white;
+    transition: fill .2s;
+}
+
+.button:disabled {
+    pointer-events: none;
+}
+
+.button:disabled svg {
+    fill: #aaa;
+}
+
+.button:hover svg {
+    fill: lawngreen;
+}
+
+.is-hidden {
+    display: none;
+}
+
+.timer__stop {
+    height: 8vh;
+    margin-bottom: auto;
+}
+
+.stop__icon {
+    height: 5vh;
+    width: 5vh;
+    margin: 0 auto;
+    line-height: 5vh;
+    cursor: pointer;
+}
+
+.stop__icon svg {
+    width: 100%;
+    height: 100%;
+    fill: crimson;
+    animation: shake .1s linear 0s infinite;
+}
+
+@keyframes shake {
+ 0% {
+     transform: translateX(0);
+ }
+
+ 25% {
+     transform: translateX(-2px);
+ }
+
+ 75% {
+     transform: translateX(2px);
+ }
+
+ 100% {
+     transform: translateX(0);
+ }
+}
+
+
+
+
+
+
+
+
